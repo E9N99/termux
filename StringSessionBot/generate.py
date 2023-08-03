@@ -39,7 +39,7 @@ async def main(_, msg):
 
 async def generate_session(bot, msg, telethon=False):
     await msg.reply(
-        "**- استخـراج كـود {} بواسطـة 𝗧𝗲𝗽𝘁𝗵𝗼𝗻 جـارٍ...**".format(
+        "**- استخـراج كـود {} بواسطـة 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 جـارٍ...**".format(
             "تيرمكـس" if telethon else "بايروجـرام"
         )
     )
@@ -156,7 +156,7 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} كـود الجلسـة ⇣** \n\n`{}` \nمستخـرج مـن 💡 @Tepthon".format(
+    text = "**{} كـود الجلسـة ⇣** \n\n`{}` \nمستخـرج مـن 💡 @E9N99".format(
 "تليثون" if telethon else "بايروجرام", string_session
     )
     try:
@@ -165,7 +165,7 @@ async def generate_session(bot, msg, telethon=False):
         pass
     await client.disconnect()
     await phone_code_msg.reply(
-        "تـم استـخـراج {} الجـلسة. \n\nيرجـى تـفـحص الرسائـل المحفوظـة! \n\nمن @Tepthon".format(
+        "تـم استـخـراج {} الجـلسة. \n\nيرجـى تـفـحص الرسائـل المحفوظـة! \n\nمن @E9N99".format(
             "telethon" if telethon else "pyrogram"
         )
     )
